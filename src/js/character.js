@@ -1,17 +1,16 @@
 export default class Character {
+  
+  static typeHeroes = [
+    "Bowman",
+    "Daemon",
+    "Magician",
+    "Swordsman",
+    "Undead",
+    "Zombie",
+  ];
+  
   constructor(name, type) {
-    this.name = name;
-    this.type = type;
-    this.health = 100;
-    this.level = 1;
-    const typeHeroes = [
-      "Bowman",
-      "Daemon",
-      "Magician",
-      "Swordsman",
-      "Undead",
-      "Zombie",
-    ];
+    
 
     if (typeof name !== "string") {
       throw new Error("Ошибка! Имя должно быть строкой!");
@@ -21,9 +20,15 @@ export default class Character {
       throw new Error("Ошибка! количество символов в имени от 2 до 10!");
     }
 
-    if (!typeHeroes.includes(type)) {
+    if (!Character.typeHeroes.includes(type)) {
       throw new Error("Ошибка! Такой персонаж не существует!");
     }
+    this.name = name;
+    this.type = type;
+    
+    this.health = 100;
+    this.level = 1;
+    
   }
 
   levelUp() {
