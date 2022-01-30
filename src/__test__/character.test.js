@@ -8,7 +8,7 @@ import Zombie from '../js/Zombie';
 
 test('Заданный персонаж не существует', () => {
   expect(() => {
-    const result = new Character('xxx', 'Fairy');
+    const result = new Character('Peter', 'Gladiator');
     return result;
   }).toThrow();
 });
