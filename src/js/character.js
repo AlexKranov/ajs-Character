@@ -5,24 +5,24 @@ export default class Character {
     this.health = 100;
     this.level = 1;
     const typeHeroes = [
-      'Bowman',
-      'Daemon',
-      'Magician',
-      'Swordsman',
-      'Undead',
-      'Zombie',
+      "Bowman",
+      "Daemon",
+      "Magician",
+      "Swordsman",
+      "Undead",
+      "Zombie",
     ];
 
-    if (typeof name !== 'string') {
-      throw new Error('Ошибка! Имя должно быть строкой!');
+    if (typeof name !== "string") {
+      throw new Error("Ошибка! Имя должно быть строкой!");
     }
 
     if (name.length < 2 || name.length > 10) {
-      throw new Error('Ошибка! количество символов в имени от 2 до 10!');
+      throw new Error("Ошибка! количество символов в имени от 2 до 10!");
     }
 
     if (!typeHeroes.includes(type)) {
-      throw new Error('Ошибка! Такой персонаж не существует!');
+      throw new Error("Ошибка! Такой персонаж не существует!");
     }
   }
 
@@ -33,7 +33,7 @@ export default class Character {
       this.attack *= 1.2;
       this.deffence *= 1.2;
     } else {
-      throw new Error('Нельзя повысить уровень умершего!');
+      throw new Error("Нельзя повысить уровень умершего!");
     }
     return 1;
   }
