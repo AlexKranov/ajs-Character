@@ -48,3 +48,7 @@ al
     1. Undead: 25/25
     1. Zombie: 40/10
     1. Daemon: 10/40
+
+
+______
+[![Build status](https://ci.appveyor.com/api/projects/status/ad7cu0c1w7yoo6vm?svg=true)](https://ci.appveyor.com/project/AlexKranov/ajs-character)
