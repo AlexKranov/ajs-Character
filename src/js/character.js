@@ -39,13 +39,11 @@ export default class Character {
   }
 
   damage(points) {
-    if (this.health > 0) {
+    if (this.health >= 0) {
       this.health -= points * (1 - this.deffence / 100);
-      // console.log('Не сегодня!');
     }
     if (this.health < 0) {
       this.health = 0;
-      // console.log('Game over!');
     }
   }
 }
