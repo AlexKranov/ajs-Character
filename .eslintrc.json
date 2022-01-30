@@ -1,31 +1,15 @@
 {
-	"env": {
-		"es6": true,
-		"browser": true,
-		"jest": true
-	},
-	"extends": [
-		"airbnb-base",
-		"plugin:prettier/recommended",
-		"prettier"
-		
-	],
-	"plugins": [
-		"babel",
-		"prettier"
-		
-	],
-	"rules": {
-	"no-restricted-syntax": [
-      "error",
-      "LabeledStatement",
-      "WithStatement"
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": [
+        "airbnb-base"
     ],
-	"no-unused-vars": "off",
-	"prettier/prettier": "error",
-	"max-classes-per-file": "off",
-	"quotes": ["error", "double"]
-
-	}
-
+    "parserOptions": {
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    "rules": {
+    }
 }
